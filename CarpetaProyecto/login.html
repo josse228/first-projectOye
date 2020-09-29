@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=2.0, shrink-to-fit=no"/>
+    <meta name="description" content="Descargar musica, musica compartida y gratuita" />
+    <meta name="keywords" content="OYE, OYE musica, musica, musica gratis, descargar musica, music, song, musica mp3">
+    <meta name="author" content="Jose Martinez">
+    <title>OYE | Inicio</title>
+
+    <!--             Fuentes de GOOGLE              -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet" type="text/css">
+    <!--            Bootstrap core CSS               -->
+    <link href="../dist/css/bootstrap.css" rel="stylesheet" />
+
+    <!--            Estilos CSS                      -->
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+
+  <body class="bg-secondary">
+
+    <!---------------------Encabezado---------------------->
+    
+    <!------------------Navegacion y Logo------------------->
+    
+    <header role="header" class="container-fluid bg-primary mt-0">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <img class="logo" src="imagenes/logo.png" alt="Logo">
+            <a class="navbar-brand ml-3" href="inicio.html">OYE</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#barra"
+                aria-controls="barra"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse text-center" id="barra">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="canciones.html">Canciones</a>
+                    </li>
+                </ul>
+                <div class="dropdown-divider"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+
+                      <a type="button" class="nav-link" data-toggle="modal" data-target="#ventana">Contacto</a>
+
+                      <div class="modal" tabindex="-1" role="dialog" id="ventana">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                
+                            <div class="modal-header">
+                              <h5 class="modal-title">Contacto</h5>
+                              <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                
+                            <div class="modal-body">
+                              <p>info@oye.com</p>
+                              <p>+1 123 123123123</p>
+                            </div>
+                
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                
+                          </div>
+                        </div>
+                      </div>
+
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item  active">
+                      <a class="nav-link btn btn-outline-dark" href="login.html">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link ml-0 ml-lg-2 btn btn-success" id="registro" href="registro.html">Crea tu cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+  <!---------------------Contenido Principal---------------------->
+    <!---------------------Inicio de Sesion---------------------->
+
+    <main id="mainlogin" class="container-fluid py-5 imgfondo">
+        <div class="text-center text-primary py-5">
+            <h3>¡Inicia sesión!</h3>
+          <div class="col-md-4 m-auto">
+              <form class="form-signin">
+                  <label for="inputEmail" class="sr-only">Correo Electrónico</label>
+                  <input
+                    type="email"
+                    id="inputEmail"
+                    class="form-control mt-4 smfont"
+                    placeholder="Correo Electrónico"
+                    required
+                    autofocus
+                    autocomplete="off"
+                  />
+                  <label for="inputPassword" class="sr-only">Contraseña</label>
+                  <input
+                    type="password"
+                    id="inputPassword"
+                    class="form-control mt-2 smfont"
+                    placeholder="Contraseña"
+                    required
+                    autocomplete="off"
+                  />
+                  <button class="btn btn-lg btn-primary btn-block mt-3 col-md-6 mx-auto smfont" type="submit">
+                    Ingresar
+                  </button>
+                </form>
+          </div>
+        </div>
+      </main>
+
+      <!---------------------Pie de pagina---------------------->
+
+      <footer class="container-fluid py-1 bg-success text-white smfont footer">
+        <div class="row">
+            <div class="col-auto">
+                Comparte música
+            </div>
+            <div class="col text-right">
+            @Derechos reservados
+            </div>
+        </div>
+      </footer>
+
+
+        <!---------------------JQuery BootStrap---------------------->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="../dist/js/bootstrap.bundle.js"></script>
+    
+            <!---------------------Scripts Personalizados---------------------->
+        <script src="./javascript/scripts.js"></script>
+        
+    </body>
+  </html>

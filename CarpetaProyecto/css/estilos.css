@@ -1,0 +1,56 @@
+/*-------------Estilos personalizados-------------*/
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat Subrayada';
+    font-weight: bold;
+}
+
+body{
+    border-top: 2px solid orangered;
+}
+
+#barra>ul>li>a {
+    font-size: 0.850em;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.imagenes {
+    width: 500px;
+    height: auto;
+}
+
+.smfont {
+    font-size: 0.850em;
+}
+
+.error {
+    color: red;
+}
+
+.imgfondo {
+    background: url(../imagenes/concert.jpg);
+}
+
+.imgfondo2 {
+    background: url(../imagenes/fondo-naranja.jpg);
+}
+
+@media screen and (max-width: 480px){
+    .imagenes {
+        width: 350px;
+        object-fit: cover;
+    }  
+}
+@media screen and (max-width: 768px){
+    .imagenes {
+        width: 330px;
+        object-fit: cover;
+    }  
+}
